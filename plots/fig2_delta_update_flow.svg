@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 300" width="520" height="300">
+  <defs>
+    <!-- Gradients -->
+    <linearGradient id="activeNodeGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#2f855a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#48bb78;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="sparseNodeGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#edf2f7;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#e2e8f0;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="rootNodeGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#2c5282;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3182ce;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- Arrow Markers - smaller and lighter -->
+    <marker id="arrowActive" markerWidth="6" markerHeight="5" refX="5" refY="2.5" orient="auto">
+      <polygon points="0 0, 6 2.5, 0 5" fill="#2f855a"/>
+    </marker>
+    <marker id="arrowCached" markerWidth="5" markerHeight="4" refX="4" refY="2" orient="auto">
+      <polygon points="0 0, 5 2, 0 4" fill="#a0aec0"/>
+    </marker>
+    <marker id="arrowDelta" markerWidth="6" markerHeight="5" refX="5" refY="2.5" orient="auto">
+      <polygon points="0 0, 6 2.5, 0 5" fill="#dd6b20"/>
+    </marker>
+    <marker id="arrowTime" markerWidth="6" markerHeight="5" refX="5" refY="2.5" orient="auto">
+      <polygon points="0 0, 6 2.5, 0 5" fill="#718096"/>
+    </marker>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="520" height="300" fill="#ffffff"/>
+  
+  <!-- Title -->
+  <text x="260" y="18" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#1a202c" text-anchor="middle">Delta Update Propagation Flow in HD-SMS</text>
+  
+  <!-- Time indicator -->
+  <text x="420" y="18" font-family="Arial, sans-serif" font-size="8" fill="#718096">Epoch t → t+1</text>
+  <line x1="472" y1="15" x2="505" y2="15" stroke="#718096" stroke-width="1" marker-end="url(#arrowTime)"/>
+  
+  <!-- Level labels -->
+  <text x="15" y="58" font-family="Arial, sans-serif" font-size="7" fill="#718096">Level 3</text>
+  <text x="15" y="108" font-family="Arial, sans-serif" font-size="7" fill="#718096">Level 2</text>
+  <text x="15" y="163" font-family="Arial, sans-serif" font-size="7" fill="#718096">Level 1</text>
+  <text x="15" y="218" font-family="Arial, sans-serif" font-size="7" fill="#718096">Leaves</text>
+  
+  <!-- ROOT (Level 3) -->
+  <rect x="175" y="40" width="55" height="26" rx="4" fill="url(#rootNodeGrad)" stroke="#2c5282" stroke-width="1.5"/>
+  <text x="202" y="57" font-family="Arial, sans-serif" font-size="9" fill="white" text-anchor="middle" font-weight="bold">Root</text>
+  
+  <!-- Level 2 Nodes -->
+  <rect x="95" y="93" width="48" height="24" rx="3" fill="url(#activeNodeGrad)" stroke="#276749" stroke-width="1.5"/>
+  <text x="119" y="109" font-family="Arial, sans-serif" font-size="9" fill="white" text-anchor="middle" font-weight="bold">N₁</text>
+  
+  <rect x="180" y="93" width="48" height="24" rx="3" fill="url(#sparseNodeGrad)" stroke="#a0aec0" stroke-width="1"/>
+  <text x="204" y="109" font-family="Arial, sans-serif" font-size="9" fill="#718096" text-anchor="middle">N₂</text>
+  
+  <rect x="265" y="93" width="48" height="24" rx="3" fill="url(#sparseNodeGrad)" stroke="#a0aec0" stroke-width="1"/>
+  <text x="289" y="109" font-family="Arial, sans-serif" font-size="9" fill="#718096" text-anchor="middle">N₃</text>
+  
+  <!-- Level 1 Nodes -->
+  <rect x="55" y="148" width="44" height="22" rx="3" fill="url(#activeNodeGrad)" stroke="#276749" stroke-width="1.5"/>
+  <text x="77" y="163" font-family="Arial, sans-serif" font-size="9" fill="white" text-anchor="middle" font-weight="bold">N₄</text>
+  
+  <rect x="112" y="148" width="44" height="22" rx="3" fill="url(#sparseNodeGrad)" stroke="#a0aec0" stroke-width="1"/>
+  <text x="134" y="163" font-family="Arial, sans-serif" font-size="9" fill="#718096" text-anchor="middle">N₅</text>
+  
+  <rect x="170" y="148" width="44" height="22" rx="3" fill="url(#sparseNodeGrad)" stroke="#a0aec0" stroke-width="1"/>
+  <text x="192" y="163" font-family="Arial, sans-serif" font-size="9" fill="#718096" text-anchor="middle">N₆</text>
+  
+  <rect x="227" y="148" width="44" height="22" rx="3" fill="url(#sparseNodeGrad)" stroke="#a0aec0" stroke-width="1"/>
+  <text x="249" y="163" font-family="Arial, sans-serif" font-size="9" fill="#718096" text-anchor="middle">N₇</text>
+  
+  <!-- Leaf Nodes -->
+  <circle cx="50" cy="215" r="12" fill="url(#activeNodeGrad)" stroke="#276749" stroke-width="1.5"/>
+  <text x="50" y="219" font-family="Arial, sans-serif" font-size="8" fill="white" text-anchor="middle" font-weight="bold">a₁</text>
+  
+  <circle cx="82" cy="215" r="12" fill="url(#sparseNodeGrad)" stroke="#a0aec0" stroke-width="1"/>
+  <text x="82" y="219" font-family="Arial, sans-serif" font-size="8" fill="#718096" text-anchor="middle">a₂</text>
+  
+  <circle cx="114" cy="215" r="12" fill="url(#sparseNodeGrad)" stroke="#a0aec0" stroke-width="1"/>
+  <text x="114" y="219" font-family="Arial, sans-serif" font-size="8" fill="#718096" text-anchor="middle">a₃</text>
+  
+  <circle cx="146" cy="215" r="12" fill="url(#sparseNodeGrad)" stroke="#a0aec0" stroke-width="1"/>
+  <text x="146" y="219" font-family="Arial, sans-serif" font-size="8" fill="#718096" text-anchor="middle">a₄</text>
+  
+  <circle cx="178" cy="215" r="12" fill="url(#sparseNodeGrad)" stroke="#a0aec0" stroke-width="1"/>
+  <text x="178" y="219" font-family="Arial, sans-serif" font-size="8" fill="#718096" text-anchor="middle">a₅</text>
+  
+  <circle cx="210" cy="215" r="12" fill="url(#sparseNodeGrad)" stroke="#a0aec0" stroke-width="1"/>
+  <text x="210" y="219" font-family="Arial, sans-serif" font-size="8" fill="#718096" text-anchor="middle">a₆</text>
+  
+  <!-- Connecting Lines - Root to Level 2 -->
+  <line x1="190" y1="66" x2="130" y2="91" stroke="#2f855a" stroke-width="1.5" marker-end="url(#arrowActive)"/>
+  <line x1="202" y1="66" x2="204" y2="91" stroke="#a0aec0" stroke-width="1" stroke-dasharray="3,2" marker-end="url(#arrowCached)"/>
+  <line x1="215" y1="66" x2="278" y2="91" stroke="#a0aec0" stroke-width="1" stroke-dasharray="3,2" marker-end="url(#arrowCached)"/>
+  
+  <!-- Connecting Lines - Level 2 to Level 1 -->
+  <line x1="107" y1="117" x2="88" y2="146" stroke="#2f855a" stroke-width="1.5" marker-end="url(#arrowActive)"/>
+  <line x1="131" y1="117" x2="134" y2="146" stroke="#a0aec0" stroke-width="1" stroke-dasharray="3,2" marker-end="url(#arrowCached)"/>
+  <line x1="192" y1="117" x2="192" y2="146" stroke="#a0aec0" stroke-width="1" stroke-dasharray="3,2" marker-end="url(#arrowCached)"/>
+  <line x1="216" y1="117" x2="238" y2="146" stroke="#a0aec0" stroke-width="1" stroke-dasharray="3,2" marker-end="url(#arrowCached)"/>
+  
+  <!-- Connecting Lines - Level 1 to Leaves -->
+  <line x1="66" y1="170" x2="55" y2="201" stroke="#2f855a" stroke-width="1.5" marker-end="url(#arrowActive)"/>
+  <line x1="88" y1="170" x2="82" y2="201" stroke="#a0aec0" stroke-width="1" stroke-dasharray="3,2" marker-end="url(#arrowCached)"/>
+  <line x1="122" y1="170" x2="114" y2="201" stroke="#a0aec0" stroke-width="1" stroke-dasharray="3,2" marker-end="url(#arrowCached)"/>
+  <line x1="146" y1="170" x2="146" y2="201" stroke="#a0aec0" stroke-width="1" stroke-dasharray="3,2" marker-end="url(#arrowCached)"/>
+  <line x1="181" y1="170" x2="178" y2="201" stroke="#a0aec0" stroke-width="1" stroke-dasharray="3,2" marker-end="url(#arrowCached)"/>
+  <line x1="203" y1="170" x2="210" y2="201" stroke="#a0aec0" stroke-width="1" stroke-dasharray="3,2" marker-end="url(#arrowCached)"/>
+  
+  <!-- Delta indicator -->
+  <text x="50" y="242" font-family="Arial, sans-serif" font-size="7" fill="#dd6b20" text-anchor="middle" font-weight="bold">δ = +10⁻⁶</text>
+  <line x1="50" y1="228" x2="50" y2="234" stroke="#dd6b20" stroke-width="1" marker-end="url(#arrowDelta)"/>
+  
+  <!-- Info Box -->
+  <rect x="335" y="38" width="170" height="115" fill="#f7fafc" stroke="#e2e8f0" stroke-width="1" rx="3"/>
+  <text x="420" y="52" font-family="Arial, sans-serif" font-size="9" fill="#2d3748" text-anchor="middle" font-weight="bold">Update Process</text>
+  <line x1="345" y1="58" x2="495" y2="58" stroke="#e2e8f0" stroke-width="1"/>
+  
+  <text x="345" y="72" font-family="Arial, sans-serif" font-size="8" fill="#4a5568">1. Account a₁ receives δ = +10⁻⁶</text>
+  <text x="345" y="86" font-family="Arial, sans-serif" font-size="8" fill="#4a5568">2. Compute H(a₁ ‖ δ ‖ epoch)</text>
+  <text x="345" y="100" font-family="Arial, sans-serif" font-size="8" fill="#4a5568">3. Propagate: a₁ → N₄ → N₁ → Root</text>
+  <text x="345" y="114" font-family="Arial, sans-serif" font-size="8" fill="#4a5568">4. Cached: N₂, N₃, N₅, N₆, N₇</text>
+  
+  <rect x="345" y="122" width="150" height="16" fill="#f0fff4" stroke="#9ae6b4" stroke-width="1" rx="2"/>
+  <text x="420" y="133" font-family="Arial, sans-serif" font-size="8" fill="#276749" text-anchor="middle" font-weight="bold">Only 3 nodes recomputed</text>
+  
+  <!-- Legend -->
+  <rect x="335" y="165" width="170" height="80" fill="#ffffff" stroke="#e2e8f0" stroke-width="1" rx="3"/>
+  <text x="420" y="179" font-family="Arial, sans-serif" font-size="9" fill="#2d3748" text-anchor="middle" font-weight="bold">Legend</text>
+  <line x1="345" y1="185" x2="495" y2="185" stroke="#e2e8f0" stroke-width="1"/>
+  
+  <!-- Legend items -->
+  <rect x="345" y="193" width="12" height="10" rx="2" fill="url(#activeNodeGrad)" stroke="#276749" stroke-width="1"/>
+  <text x="362" y="201" font-family="Arial, sans-serif" font-size="7" fill="#4a5568">Active node (recomputed)</text>
+  
+  <rect x="345" y="208" width="12" height="10" rx="2" fill="url(#sparseNodeGrad)" stroke="#a0aec0" stroke-width="1"/>
+  <text x="362" y="216" font-family="Arial, sans-serif" font-size="7" fill="#4a5568">Sparse node (cached)</text>
+  
+  <line x1="345" y1="228" x2="365" y2="228" stroke="#2f855a" stroke-width="1.5" marker-end="url(#arrowActive)"/>
+  <text x="375" y="231" font-family="Arial, sans-serif" font-size="7" fill="#4a5568">Active path</text>
+  
+  <line x1="435" y1="228" x2="455" y2="228" stroke="#a0aec0" stroke-width="1" stroke-dasharray="3,2" marker-end="url(#arrowCached)"/>
+  <text x="465" y="231" font-family="Arial, sans-serif" font-size="7" fill="#4a5568">Cached</text>
+  
+  <line x1="345" y1="240" x2="355" y2="240" stroke="#dd6b20" stroke-width="1" marker-end="url(#arrowDelta)"/>
+  <text x="362" y="243" font-family="Arial, sans-serif" font-size="7" fill="#4a5568">Delta update (δ)</text>
+  
+  <!-- Complexity note -->
+  <text x="260" y="265" font-family="Arial, sans-serif" font-size="8" fill="#718096" text-anchor="middle">Update complexity: O(log n) vs O(n) in traditional Merkle trees</text>
+  
+  <!-- Figure caption area -->
+  <text x="260" y="290" font-family="Arial, sans-serif" font-size="8" fill="#4a5568" text-anchor="middle" font-style="italic">Fig. 2. Delta update propagation showing active path (green) and cached branches (gray dashed)</text>
+</svg>
