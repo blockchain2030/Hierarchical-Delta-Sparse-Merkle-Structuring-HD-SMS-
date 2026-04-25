@@ -1,0 +1,5 @@
+Metric,vs_SMT,vs_Verkle
+Proof Size Reduction,38%-62%,27%-59%
+Update Cost Reduction,43%-70%,46%-71%
+Storage Overhead Reduction,33%-47%,43%-55%
+Verification Latency Reduction,34%-44%,47%-54%
