@@ -1,0 +1,3 @@
+n,seeds,batch_updates_total_mean,batch_updates_total_ci95,SMT_total_hash_ops_batch_mean,SMT_total_hash_ops_batch_ci95,HD_SMS_total_hash_ops_batch_mean,HD_SMS_total_hash_ops_batch_ci95,HD_SMS_global_ops_only_mean,HD_SMS_global_ops_only_ci95,SMT_avg_hash_ops_per_update_batch_mean,SMT_avg_hash_ops_per_update_batch_ci95,HD_SMS_avg_hash_ops_per_update_batch_mean,HD_SMS_avg_hash_ops_per_update_batch_ci95
+10000,5,992.4,45.754342,14886.0,686.315123,11026.4,496.041451,110.0,15.825635,15.0,0.0,11.111142,0.018527
+100000,5,990.6,44.93863,17830.8,808.895343,11210.2,463.112518,313.6,36.760781,18.0,0.0,11.31768,0.050368
