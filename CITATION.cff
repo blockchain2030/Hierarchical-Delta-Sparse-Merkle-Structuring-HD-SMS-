@@ -1,0 +1,24 @@
+cff-version: 1.2.0
+title: "HD-SMS: Hierarchical Delta Sparse Merkle Structuring — Executable Prototype"
+message: "If you use this software, please cite both the manuscript and this repository."
+type: software
+authors:
+  - family-names: Shahid
+    given-names: Muhammad
+repository-code: "https://github.com/blockchain2030/Hierarchical-Delta-Sparse-Merkle-Structuring-HD-SMS-"
+abstract: >
+  Reference Python implementation of Hierarchical Delta Sparse Merkle
+  Structuring (HD-SMS), with a Sparse Merkle Tree baseline and a
+  reproducible benchmark harness for micro-fraction token transfer
+  workloads. All commitments use SHA-256 with domain separation; no
+  experimental values are hardcoded in the source.
+keywords:
+  - blockchain
+  - sparse merkle tree
+  - authenticated data structures
+  - delta encoding
+  - micro-fraction transfers
+  - layer-2 rollups
+license: MIT
+version: "1.0.0"
+date-released: 2026-06-29
