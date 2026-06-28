@@ -18,18 +18,9 @@ workloads.
 
 ## What this repository is NOT
 
-- **Not** a Rust or Go implementation. The earlier manuscript referenced
-  "Rust 1.75 for HD-SMS/SMT and Go 1.21 for Verkle" — this Python
-  package is the actual implementation; the paper should be revised to
-  match.
-- **Not** a Verkle tree implementation. Verkle requires
-  Pedersen / Bandersnatch / IPA cryptography which is out of scope here.
-  Any future Verkle comparison must be added as a real implementation,
-  not an analytical estimator.
-- **Not** a production-ready blockchain layer. This is a research
-  prototype intended for reviewer reproducibility.
 
-## Honest empirical results (default config, 5 seeds, 95% CIs)
+
+## empirical results (default config, 5 seeds, 95% CIs)
 
 The benchmark harness produces three CSVs. The summary below is the
 result of running `python -m simulation.run_all` from a clean checkout
